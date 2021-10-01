@@ -8,8 +8,8 @@ password=""
 az vm create \
     --name $vmName\
     --resource-group $rgName \
-    --location "uksouth"
-    --image "win2019Datacenter" \
+    --location uksouth
+    --image win2019Datacenter \
     --size Standard_D2s_v3 \
     --nics az204vm1-nic \
     --public-ip-address-dns-name az204vm1 \
@@ -21,6 +21,6 @@ az vm extension set \
     --publisher Microsoft.Compute \
     --version 1.9 \
     --name CustomScriptExtension \
-    --vm-name ${vmname} \
-    --resource-group ${rg} \
+    --vm-name $vmName \
+    --resource-group $rgName \
     --settings '{"fileUris":["https://raw.githubusercontent.com/markkerry/AZ-204-Study/main/1-Develop-Azure-compute-solutions/2-Deploy-Solution-to-Azure-VM/1-configure-vm.ps1"], "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File 1-configure-vm.ps1 > c:\powershell.txt"}'
