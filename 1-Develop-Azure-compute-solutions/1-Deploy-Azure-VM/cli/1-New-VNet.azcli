@@ -1,0 +1,41 @@
+# Create a new VNet
+az network vnet create \
+    --name az204-vnet1 \
+    --resource-group az204-rg \
+    --address-prefixes 10.1.0.0/16
+
+# Create a subnet and associate with the VNet
+az network vnet subnet create \
+    --name az204-subnet1 \
+    --vnet-name az204-vnet1 \ 
+    --resource-group az204-rg \
+    --address-prefixes 10.1.1.0/24
+
+# Create a Public IP
+az network public-ip create \
+    --resource-group az204-rg \
+    --name az204vm1-pip
+
+# Create NSG
+az network nsg create \
+    --name az204-nsg \
+    --resource-group az204-rg
+
+# crete allow port 3389 rdp
+az network nsg rule create \
+    --resource-group az204-rg \
+    --nsg-name az204-nsg \
+    --name allowRDP \
+    --protocol tcp \
+    --priority 1000 \
+    --destination-port-range 3389 \
+    --access allow
+
+# Create nic for VM and assign nsg and pip
+az network nic create \
+    --resource-group az204-rg \
+    --name az204vm1-nic \
+    --vnet-name az204-vnet1 \
+    --subnet az204-subnet1 \
+    --network-security-group az204-nsg \
+    --public-ip-address az204vm1-pip
