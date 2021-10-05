@@ -31,6 +31,26 @@ az network nsg rule create \
     --destination-port-range 3389 \
     --access allow
 
+# create allow port 8172 IIS Management Service 
+az network nsg rule create \
+    --resource-group az204-rg \
+    --nsg-name az204-nsg \
+    --name allowIISManagementService \
+    --protocol tcp \
+    --priority 1001 \
+    --destination-port-range 8172 \
+    --access allow
+
+# create allow port 80 for web traffic once site is deployed 
+az network nsg rule create \
+    --resource-group az204-rg \
+    --nsg-name az204-nsg \
+    --name allowIISManagementService \
+    --protocol tcp \
+    --priority 1001 \
+    --destination-port-range 8172 \
+    --access allow
+
 # Create nic for VM and assign nsg and pip
 az network nic create \
     --resource-group az204-rg \

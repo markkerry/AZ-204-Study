@@ -1,0 +1,18 @@
+# Create a new Ubuntu VM
+# Run from CloudShell - bash
+
+rgName="az204-rg"
+vmName="az204vm2"
+password=""
+
+az vm create \
+    --name $vmName\
+    --resource-group $rgName \
+    --location uksouth
+    --image UbuntuLTS \
+    --size Standard_D2s_v3 \
+    --nics az204vm2-nic \
+    --public-ip-address-dns-name az204vm2 \
+    --os-disk-name az204vm2-osdisk \
+    --admin-username azureuser \
+    --admin-password $password

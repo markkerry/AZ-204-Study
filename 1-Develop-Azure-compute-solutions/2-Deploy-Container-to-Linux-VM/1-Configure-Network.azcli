@@ -1,0 +1,33 @@
+# Create a Public IP
+az network public-ip create \
+    --resource-group az204-rg \
+    --name az204vm2-pip
+
+# Create nic for VM and assign nsg and pip
+az network nic create \
+    --resource-group az204-rg \
+    --name az204vm2-nic \
+    --vnet-name az204-vnet1 \
+    --subnet az204-subnet1 \
+    --network-security-group az204-nsg \
+    --public-ip-address az204vm2-pip
+
+# Create allow port 22 SSH
+az network nsg rule create \
+    --resource-group az204-rg \
+    --nsg-name az204-nsg \
+    --name allowRDP \
+    --protocol tcp \
+    --priority 1003 \
+    --destination-port-range 22 \
+    --access allow
+
+# Create allow port 3000 for the container
+az network nsg rule create \
+    --resource-group az204-rg \
+    --nsg-name az204-nsg \
+    --name allowPort3000 \
+    --protocol tcp \
+    --priority 1004 \
+    --destination-port-range 3000 \
+    --access allow
