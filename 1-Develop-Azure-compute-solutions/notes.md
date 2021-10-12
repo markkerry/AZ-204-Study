@@ -30,3 +30,4 @@ Using the same Ubuntu VM above, I will install nginx and deploy a .NET CORE app 
 * Install nginx on the Ubuntu VM
 * Configure nginx and permissions on the VM
 * Deploy the web app to the VM
+
