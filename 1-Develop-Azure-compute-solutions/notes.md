@@ -9,7 +9,7 @@ The solution is an ASP.NET app deployed from Visual Studio.
 * Install the Web Deploy tool
 * Publish an ASP.NET app to the VM from Visual Studio
 
-![deployedToAzureVM](media/deployedToAzureVM.png)
+![deployedToAzureVM](media/deployedToAzureVm.png)
 
 ## 2-Deploy-Container-to-Linux-VM
 
