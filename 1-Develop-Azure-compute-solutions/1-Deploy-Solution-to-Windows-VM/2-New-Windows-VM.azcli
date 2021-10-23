@@ -23,4 +23,4 @@ az vm extension set \
     --name CustomScriptExtension \
     --vm-name $vmName \
     --resource-group $rgName \
-    --settings '{"fileUris":["https://raw.githubusercontent.com/markkerry/AZ-204-Study/main/1-Develop-Azure-compute-solutions/2-Deploy-Solution-to-Azure-VM/1-configure-vm.ps1"], "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File 1-configure-vm.ps1 > c:\powershell.txt"}'
+    --settings '{"fileUris":["https://raw.githubusercontent.com/markkerry/AZ-204-Study/main/1-Develop-Azure-compute-solutions/2-Deploy-Solution-to-Azure-VM/3-configure-vm.ps1"], "commandToExecute":"powershell.exe -ExecutionPolicy Unrestricted -File 3-configure-vm.ps1 > c:\powershell.txt"}'

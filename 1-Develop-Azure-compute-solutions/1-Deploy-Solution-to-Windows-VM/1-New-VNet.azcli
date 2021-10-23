@@ -45,10 +45,10 @@ az network nsg rule create \
 az network nsg rule create \
     --resource-group az204-rg \
     --nsg-name az204-nsg \
-    --name allowIISManagementService \
+    --name allow80 \
     --protocol tcp \
-    --priority 1001 \
-    --destination-port-range 8172 \
+    --priority 1002 \
+    --destination-port-range 80 \
     --access allow
 
 # Create nic for VM and assign nsg and pip

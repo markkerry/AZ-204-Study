@@ -1,0 +1,7 @@
+# Create the container registry
+az acr create \
+    -n az204-acr \
+    -g az204-rg \
+    --location uksouth \
+    --sku Standard \
+    --admin-enabled true

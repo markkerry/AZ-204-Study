@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = moveStorageBlob
+build_property.ProjectDir = c:\git\repos\AZ-204-Study\2-Develop-for-Azure-storage\01-move-storage-blobs\moveStorageBlob\
