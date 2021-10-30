@@ -1,0 +1,3 @@
+az appservice plan create --name mkaz204plan --resource-group az204-rg --sku B1
+
+az webapp create --name mkaz204app --plan mkaz204plan --resource-group az204-rg

@@ -1,0 +1,7 @@
+{
+    "azureFunctions.deploySubpath": "1-Develop-Azure-compute-solutions\\6-Azure-Function-HttpTrigger-C-Sharp\\src\\httpTriggerFunc/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}

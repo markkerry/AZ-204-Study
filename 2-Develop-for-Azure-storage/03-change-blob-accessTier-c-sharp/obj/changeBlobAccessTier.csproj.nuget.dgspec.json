@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\git\\repos\\AZ-204-Study\\2-Develop-for-Azure-storage\\changeBlobAccessTier\\changeBlobAccessTier.csproj": {}
+  },
+  "projects": {
+    "C:\\git\\repos\\AZ-204-Study\\2-Develop-for-Azure-storage\\changeBlobAccessTier\\changeBlobAccessTier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\repos\\AZ-204-Study\\2-Develop-for-Azure-storage\\changeBlobAccessTier\\changeBlobAccessTier.csproj",
+        "projectName": "changeBlobAccessTier",
+        "projectPath": "C:\\git\\repos\\AZ-204-Study\\2-Develop-for-Azure-storage\\changeBlobAccessTier\\changeBlobAccessTier.csproj",
+        "packagesPath": "C:\\Users\\mark-kerry\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\repos\\AZ-204-Study\\2-Develop-for-Azure-storage\\changeBlobAccessTier\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mark-kerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
+            "Azure.Storage.Common": {
+              "target": "Package",
+              "version": "[12.9.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

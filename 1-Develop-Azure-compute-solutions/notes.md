@@ -1,5 +1,9 @@
 # Develop Azure compute solutions
 
+## 0-Provision-Windows-VM-C-Sharp
+
+The solution provisions a Windows VM programmatically using C#
+
 ## 1-Deploy-Solution-to-Windows-VM
 
 The solution is an ASP.NET app deployed from Visual Studio.
@@ -30,4 +34,3 @@ Using the same Ubuntu VM above, I will install nginx and deploy a .NET CORE app 
 * Install nginx on the Ubuntu VM
 * Configure nginx and permissions on the VM
 * Deploy the web app to the VM
-
