@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = getBlobFromSAS
+build_property.ProjectDir = C:\git\repos\AZ-204-Study\2-Develop-for-Azure-storage\getBlobFromSAS\getBlobFromSAS\

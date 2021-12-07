@@ -1,0 +1,4 @@
+az storage account mananagement-policy create \
+    --account-name <storage-account> \
+    --policy @blobLifecycleManagementPolicy.json
+    --resource-group az204-rg

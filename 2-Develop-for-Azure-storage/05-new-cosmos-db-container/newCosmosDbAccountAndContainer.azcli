@@ -1,0 +1,23 @@
+# Azure CLI Create Container
+rgName='az204-rg'
+accountName='MKMSDN204'
+dbName='NameOfDatabase'
+containerName='ContainerName'
+partitionKey='/PartitionKey'
+throughput=400
+
+# Create the CosmosDB Account
+az cosmosdb create \
+    -n $accountName \
+    -g $rgName \
+    --default-consistency-level Eventual \
+    --kind GlobalDocumentDB
+
+# Create the Container
+az cosmosdb sql container create \
+    -a $accountName \
+    -g $rgName \
+    -d $dbName \
+    -n $containerName \
+    -p $partitionKey \
+    --throughput $throughput

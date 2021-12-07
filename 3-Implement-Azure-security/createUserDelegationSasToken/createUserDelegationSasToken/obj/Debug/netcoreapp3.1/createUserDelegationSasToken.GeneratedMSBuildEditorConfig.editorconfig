@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = createUserDelegationSasToken
+build_property.ProjectDir = C:\git\repos\AZ-204-Study\3-Implement-Azure-security\createUserDelegationSasToken\createUserDelegationSasToken\
