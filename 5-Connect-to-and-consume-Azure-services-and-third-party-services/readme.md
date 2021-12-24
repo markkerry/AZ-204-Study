@@ -14,7 +14,7 @@ You can see the message in the queue.
 
 ### stgQueueReceive
 
-Here another C# program us receiving and deleting the messages from the Azure Storage Queue.
+Here another C# program is receiving and deleting the messages from the Azure Storage Queue.
 
 ![queueReceive](img/queueReceive.png)
 
